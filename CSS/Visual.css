@@ -1,0 +1,441 @@
+/* Importa as fontes */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&effect=shadow-multiple|fire-animation|neon|anaglyph');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* Config gerais */
+html
+{
+    scroll-behavior: smooth;
+}
+
+*
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+/* Visual da section */
+.section-principal 
+{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/section-principal.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+
+
+
+.logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 3em;
+    font-family: 'Varela Round', sans-serif;
+    letter-spacing: -3px;
+}
+
+#logo-span
+{
+    color: #53DBFE;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    padding: 20px 0px;
+}
+
+.nav-list
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-list li 
+{
+    margin-left: 40px;
+    list-style: none;
+}
+
+.nav-list li .menu-btn {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+.nav-list li .menu-btn:hover
+{
+    background: #fff;
+    color: #000;
+    border: none;
+}
+
+nav .active {
+    border: 1.5px solid #ffffff;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.section-titulos 
+{
+    position: relative;
+    width: 50%;
+    margin-left: 3%;
+}
+
+.section-titulos h1
+{
+    color: #fff;
+    font-size: 7em;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.section-descrit
+{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.section-descrit span:first-child
+{
+    font-size: 1.6em;
+    color: #c751c3;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.section-descrit span:nth-child(2)
+{
+    position: relative;
+    bottom: 8px;
+    margin-left: 10px;
+    border: none;
+    text-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.section-descrit .ico-section
+{
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+
+
+.services
+{
+    padding: 30px 150px;
+    background: #2C1E59;
+}
+
+.services h3 {
+    color: #FE3F9B;
+    text-transform: uppercase;
+}
+
+.services-text
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    color: #fff;
+}
+
+.services-text h1
+{
+    font-size: 4em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.services-text span
+{
+    width: 45%;
+    color: #999999;
+}
+
+.services-card
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 250px;
+
+}
+
+.card
+{
+    width: 100%;
+    color: #fff;
+    height: 500px;
+    text-align: center;
+    border-radius: 22px;
+    
+}
+
+.ico-card
+{
+    font-size: 4em;
+    margin-top: 100px;
+}
+
+.card .ico-card-fora
+{
+    box-shadow: 5px 10px 50px 40px;
+    text-shadow: #fff 10px 10px 50px;
+    border: 16px solid #41ACE5 ;
+    border-radius: 50%;
+}
+
+.card-text
+{
+    margin-top: 100px;
+}
+
+.active-card
+{
+    background: #fff;
+    color: #523691;
+    box-shadow: 0px 10px 50px 5px rgba(0, 0, 0, 0.678);
+}
+
+.ico-card-active
+{
+   color: #FE3F9B;
+}
+
+.active-card:first-child
+{
+    color: #fff;
+    box-shadow: 4px 10px 50px 5px rgba(0, 0, 0, 0.678);
+}
+
+.btn-card
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 25px;
+    border: 2px solid #513D82;
+    border-radius: 30px;
+    background: #30C8E9;
+    text-align: center;
+}
+
+.btn-card-active
+{
+   border: 3px solid #DAE9F5;
+}
+
+.comentarios
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #22174D;
+    color: #fff;
+}
+
+.comentarios h3,
+.comentarios #um-container-titulo
+{
+    color: #FE3F9B;
+    text-transform: uppercase;
+}
+
+#data-coments
+{
+
+    background: #302463;
+    border-radius: 30px;
+    border: 1px solid #222; 
+    padding: 7px 20px ;
+
+}
+
+.container
+{
+    position: relative;
+    top: -200px;
+    background: #342469;
+    padding: 20px 100px;
+    width: 900px;
+    border-radius: 15px;
+}
+
+.container-titulo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.btn-container
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.btn-ir-voltar a
+{
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 40px 50px;
+    border-radius: 50%;
+    background:#2C1E59;
+    border: 2px solid #22174D;
+    text-decoration-color: #bb1f77;
+    margin-left: 10px;
+    transition: 1s;
+}
+.btn-ir-voltar a:hover
+{
+    background: #D73D94;
+    box-shadow: 1px 5px 30px 5px #D73D94;
+}
+
+.btn-ir-voltar .btn-ir-coments-active
+{
+    background: #D73D94;
+    box-shadow: 1px 5px 30px 5px #D73D94;
+}
+
+.ceo
+{
+    display: flex;
+
+}
+
+.logo-ceo span
+{
+  
+    font-size: 3em;
+    color: #53DBFE;
+}
+
+.logo-ceo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 30px;
+    margin-left: 20px;
+
+
+
+    position: relative;
+    
+}
+
+.text-ceo h2,
+.text-ceo h3
+{
+
+    margin: 3px;
+    padding: 0px;
+    font-size: 1.2em;
+}
+
+.text-ceo h3
+{
+    font-size: 1em;
+}
+
+.btn-coments
+{
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    background: #33C8EA;
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-size: 1.1em;
+    border: 5px solid #42738a91;
+    transition: 0.5s;
+
+}
+
+.btn-coments:hover
+{
+    position: static;
+    letter-spacing: 2px;
+}
+
+.industrias
+{
+    background: #22174D;
+    color: #fff;
+    padding: 30px 150px;
+}
+
+.industrias h1
+{
+    font-size: 4em;
+}
+
+.nav-industries
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-industries
+{
+    z-index: auto;
+    padding: 20px 40px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(50px);  /* This will produce the blur */
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.2);
+    
+   
+}
+.seletor-nav span
+{
+    position: absolute;
+    top: -10px;
+    padding: 40px 50px;
+    border-radius: 10px;
+    border: 3px solid #FE3F9B;
+}
+
+.seletor-nav
+{
+    z-index: 1;
+}
+
+.circule
+{
+    width: 100px;
+    height: 100px;
+    background: url('../img/download.jfif') no-repeat
+    border-radius: 50%;
+}
